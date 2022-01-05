@@ -1,0 +1,21 @@
+@@ Welcome to the program!
+
+x .. 1
+
+$(x <= 5) {
+    SYSTEM.Output(x)
+    x++
+}
+
+SYSTEM.Prompt("What is your name: ", a => {
+    &(a == "Josh") {
+        SYSTEM.Output("Welcome back leader!")
+    } <> &(a == "Nick") {
+        SYSTEM.Output("Ok, you'll do!")
+    } <> {
+        SYSTEM.Output("Nope!")
+    }
+    SYSTEM.PromptClose()
+})
+
+SYSTEM.Output("End")
